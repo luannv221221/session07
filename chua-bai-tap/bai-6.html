@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .demo-icon {
+            color: red;
+            font-size: 30px;
+        }
+
+        .menu {
+            background: rgb(101, 101, 191);
+            padding: 15px;
+            position: relative;
+
+        }
+
+        .menu i {
+            font-size: 35px;
+            color: #fff;
+        }
+
+        .sub-menu {
+            background-color: blue;
+            position: absolute;
+            top: 100%;
+            width: 200px;
+            visibility: hidden;
+            transition: 1s;
+        }
+
+        .sub-menu ul li {
+            list-style: none;
+            padding: 15px;
+            border-bottom: 1px solid #fff;
+
+        }
+
+        .sub-menu ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .menu i:hover {
+            color: black;
+        }
+
+        .icon-menu {
+            width: 30px;
+        }
+
+        .icon-menu:hover .sub-menu {
+            visibility: inherit;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo-icon">
+        <i class="fa-solid fa-face-smile"></i>
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="menu">
+        <div class="icon-menu">
+            <i class="fa-solid fa-bars"></i>
+            <div class="sub-menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
